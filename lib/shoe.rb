@@ -6,6 +6,7 @@ class Shoe
 
   def initialize(brand)
     @brand = brand
+    define_method do 
     BRANDS << @brand
   
   end
