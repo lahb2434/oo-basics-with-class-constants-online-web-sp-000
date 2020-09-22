@@ -6,9 +6,9 @@ class Shoe
 
   def initialize(brand)
     @brand = brand
-    define_method do 
-    BRANDS << @brand
-  
+    unless BRANDS.any?(@brand)
+      BRANDS << @brand
+    end
   end
   
 end
